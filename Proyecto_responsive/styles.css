@@ -1,0 +1,176 @@
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-if;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+
+a{
+    color: #000000;
+    text-decoration: none;
+}
+
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+header{
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+
+.Logo {
+    display: flex;
+    align-items: center;
+}
+
+
+.Logo img {
+    height: 70px;
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+
+nav li {
+    margin-right: 20px;
+}
+
+
+nav a {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin-bottom: 1px;
+}
+
+
+.image-box {
+    flex: 1 1 44.444%;
+    margin-bottom: 3px;
+}
+
+
+.image-box img {
+    width: 100%;
+}
+
+
+.text-box {
+    flex: 1 1 66.667%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+.text-box h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+.text-box p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 70%;
+    position: relative;
+}
+
+
+.footer-group {
+    flex: 1 1 33.33%;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    position: relative;
+}
+
+
+.footer-link {
+    text-align: center;
+    position: relative;
+}
+
+
+.copyright {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .image-box {
+    flex: 1 1 100%;
+    }
+
+    .text-box {
+    flex: 1 1 100%;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+
+nav ul {
+    flex-direction: column;
+    }
+
+nav li {
+    margin-right: 0;
+    margin-bottom: 10px;
+    }
+
+    .footer-content {
+    width: 100%;
+    }
+
+    .footer-group {
+    flex: 1 1 100%;
+    }
+}
