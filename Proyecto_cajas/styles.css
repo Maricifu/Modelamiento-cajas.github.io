@@ -7,7 +7,7 @@
 
 
 html{
-    background-color: #112;
+    background-color: rgba(4, 71, 67, 0.455);
 }
 
 
@@ -16,8 +16,9 @@ body{
     height: 1400px;
     margin: 2em auto;
     padding: 40px;
-    border: 5px solid rgb(0, 0, 0);
-    background: linear-gradient(to bottom left, rgb(250, 115, 137) 30%, rgb(51, 0, 32));
+    border: 5px solid rgb(149, 91, 122);
+    border-radius: 20px;
+    background: linear-gradient(to bottom left, rgb(250, 115, 137) 4%, rgb(51, 0, 32));
 }
 
 
@@ -25,7 +26,6 @@ body{
 #header{
     padding: 60px;
     width: 100px;
-    height: 100px;
     background-color: white;
     text-align: center;
     line-height: 10px;
@@ -37,17 +37,19 @@ body{
 
 /*menu*/
 #menu{
-    margin: 0;
-    width: 1000px;
+    margin: 5px;
+    width: 960px;
     height: 50px;
     display: block;
-    background:  rgb(51, 0, 32);
-
+    background:  rgba(77, 0, 36, 0.795);
 }
 
 
 #menu h1{
-    color: white;
+    color: rgb(255, 255, 255);
+    margin-left: 2%;
+    font-size: 35px;
+    text-align: center;
 }
 
 
@@ -55,12 +57,14 @@ body{
     display: block;
     float: left;
     padding: 8px;
-    border: 2px solid rgb(255, 255, 255);
+    border: 3px solid rgba(255, 255, 255, 0.329);
     border-bottom: none;
     border-top: none;
     text-align: center;
     transition: 1s;
+    margin-left: 7%;
 }
+
 
 #menu ul li a{
     color: rgb(255, 255, 255);
@@ -69,13 +73,9 @@ body{
 }
 
 
-#menu ul li:nth-child(1){
-    border-left: none;
-}
+#menu ul li a:hover{
+    color: rgb(7, 168, 160);
 
-
-#menu ul li:nth-child(4){
-    border-left: 3px solid rgb(0, 0, 0);
 }
 
 
@@ -91,14 +91,30 @@ body{
 }
 
 
+#cajas h1{
+    font-weight: normal;
+    font-size: 25px;
+    color: white;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    background-color:rgba(6, 101, 97, 0.668);
+    width: 32pc;
+    align-items: center;
+    margin-left: 15px;
+    border-radius: 30px;
+}
+
+
 .caja{
-    width: 210px;
-    height: 210px;
+    width: 220px;
+    height: 220px;
     background-color: rgb(255, 205, 232);
-    border: 2px solid rgb(175, 71, 127);
+    border: 7px solid rgb(0, 155, 147, 0.586);
     border-radius: 50px;
-    margin: 16px;
-    margin-top: 10px;
+    margin: 20px;
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
     padding: 10px;
     float: left;
     display: block;
@@ -108,12 +124,12 @@ body{
     color: white;
     box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.667);
     transition: 3s;
-    
+    font-weight: bold;
 }
 
 
 .caja:hover{
-    background: linear-gradient(0deg, rgb(200, 112, 139), rgb(107, 0, 37));
+    background: linear-gradient(0deg, rgb(200, 112, 139), rgb(107, 0, 37), rgb(200, 112, 139));
 }
 
 .caja:active{
@@ -129,7 +145,7 @@ body{
 .caja p{
     font-weight: bold;
     text-align: center;
-    font-size: 17px;
+    font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 200px;
     color: rgb(114, 21, 37);
@@ -143,25 +159,24 @@ body{
 
 /*lateral derecho*/
 #lateral{
-    color: rgb(155, 0, 52);
-    font-size: 16px;
+    color: rgb(101, 1, 34);
+    font-size: 33px;
     font-style: italic;
     font-weight: 150;
     font-stretch: normal;
-    margin-left: 2em;
-    margin-right: 3em;
-    margin-left: 2em;
-    margin-top: 2rem;
-    margin-bottom: 2em;
+    margin-left: 1em;
+    margin-right: none;
+    margin-top: 1rem;
+    margin-bottom: 1em;
 }
 
 
-.texto-lateral h2,
+.lateral h2,
 p{
     text-align: justify;
     font-style: normal;
     font-size: 13px;
-    color: rgb(0, 0, 0);
+    color: rgba(251, 199, 227, 0.739);
 }
 
 
@@ -173,7 +188,7 @@ footer{
     width: 100%;
     display: flex;
     justify-content: center;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(148, 90, 113);
     padding: 20px;
     color: white;
     font-size: 14px;
@@ -185,3 +200,4 @@ footer{
     float: none;
     clear: both;
 }
+
