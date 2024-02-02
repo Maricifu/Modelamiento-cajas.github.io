@@ -1,0 +1,32 @@
+#menu{
+    height:50px;
+}
+
+    #menu ul{
+        text-decoration: none;
+        list-style: none;
+        line-height: 50px;
+    }
+
+    /*Grilla de productos*/
+    .item{
+        text-align: center;
+        height: 150px;
+    }
+
+
+    /*Footer*/
+    footer{
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+    }
+
+    /*Barra lateral*/
+    .lateral{
+        height: 350px;
+    }
+
+    .lateral > div{
+        height: 50px;
+    }
