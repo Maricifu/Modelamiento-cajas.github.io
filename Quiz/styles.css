@@ -112,6 +112,10 @@
         width: 100%;
     }
 
+    #fondores img{
+        display: none;
+    }
+
     #texto{
         display: flex;
         flex-direction: column;
@@ -123,7 +127,7 @@
 
     #home h1{
         color: var(--main-cinna-color);
-        font-size: 3.7vw;
+        font-size: 4vw;
         margin-bottom: 10px;
         font-family: 'lucida handwriting', fantasy;
     }
@@ -189,9 +193,9 @@
         flex-direction: column;
         padding: 10px;
         margin-left: 20px;
-        margin-right: 30px;
-        margin-bottom: 50px;
-        margin-top: 50px;
+        margin-right: 20px;
+        margin-bottom: 100px;
+        margin-top: 100px;
     }
 
     .texto2 .t1{
@@ -200,6 +204,7 @@
         text-align: left;
         font-size: 4.5vw;
         color: var(--main-site-color);
+        margin-top: 20px;
         margin-bottom: 5px;
         font-family: 'lucida handwriting', fantasy;
     }
@@ -250,6 +255,8 @@
         padding: 20px;
         flex-direction: column;
         align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 
     .texto3 h1{
@@ -262,7 +269,7 @@
         font-family: 'lucida handwriting', fantasy;
     }
 
-    .texto3 p{
+    .texto3 h5{
         display: flex;
         flex-direction: column;
         font-size: 2vw;
@@ -280,7 +287,7 @@
         align-items: center;
         border-radius: 5vh;
         padding: 20px;
-        margin-bottom: 30px;
+        margin-bottom: 50px;
     }
 
     .imgmenu img{
@@ -305,6 +312,14 @@
         flex-direction: column;
         color: var(--main-nav-color);
     }
+
+    .imgmenu .textos p #m1{
+        padding: 2px;
+        flex-direction: column;
+        color: var(--main-cinna-color);
+    }
+
+    
     
 
     /* --Seccion servicios-- */
@@ -319,6 +334,20 @@
         height: auto;
     }
 
+    .contenedor{
+        display: flex;
+        background: var(--main-bg-color);
+        height: 30vw;
+        width: 80vw;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        border-radius: 5vh;
+        padding: 20px;
+        margin-bottom: 50px;
+    }
+
+
     .textos button{
         border-radius: 20vw;
         border-color: var(--main-cinna-color);
@@ -331,9 +360,15 @@
         color: var(--main-nav-color);
     }
 
-
-
-
+    .imgmenu img{
+        padding: 10px;
+        width: 13vw;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        margin: none;
+        justify-content: center;
+    }
 
 
  /* --Media queries------------------------------------------------------------------- */
@@ -348,12 +383,12 @@
             display: none;
         }
 
-        header:has(#menu input[type="checkbox"]:checked)+ #menucel{
+        header:has(#menus input[type="checkbox"]:checked)+ #menucel{
             display: flex;
             width: 100%;
         }
 
-        header:has(#menu input[type="checkbox"]:checked)+ #menucel ul{
+        header:has(#menus input[type="checkbox"]:checked)+ #menucel ul{
             background: var(--main-cinna-color);
             display: flex;
             flex-direction: column;
@@ -363,7 +398,7 @@
             height: 40vh;
         }
 
-        header:has(#menu input[type="checkbox"]:checked)+ #menucel ul a{
+        header:has(#menus input[type="checkbox"]:checked)+ #menucel ul a{
             color: var(--main-nav-color);
             margin-top:10px;
             font-size: 3vw;
@@ -377,6 +412,8 @@
         #home{
             display: flex;
             flex-direction: row;
+            background-image: url(/Quiz/resources/fondo-responsive.jpg);
+            height: 100vh;
         }
 
         #imghome{
@@ -385,17 +422,24 @@
 
         #imgresp img{
             display: block;
+            width: 33vw;
+            margin-top: 20px;
+            margin-bottom: 20px;
         }
 
-        h1 {
-            font-size: 24px;
+        #texto{
+            margin-right: 5px;
+        }
+
+        #texto h1 {
+            font-size: 10vw;
         }
         
-        h3 {
-            font-size: 18px;
+        #texto h3 {
+            font-size: 5vw;
         }
         
-        button {
+        #texto button {
             font-size: 14px;
         }
     }
@@ -406,21 +450,34 @@
         #about{
             display: flex;
             flex-direction: column;
+            height: 100vh;
         }
 
         .imgabout img{
+            margin-top: 40px;
             width: 40vw;
         }
 
         .texto2{
+            flex-direction: column;
+            align-items: center;
             justify-content: center;
             margin-top: 2px;
-            margin-bottom: 20px;
-            margin-left: 0;
+            margin-bottom: 70px;
+            margin-left: 10px;
+            margin-right: 0px;
         }
 
         .texto2 .t1{
+            align-items: center;
             font-size: 4vw;
+            margin-top: 2px;
+        }
+
+        .texto2 .t3{
+            align-items: center;
+            font-size: 4vw;
+            margin-top: 2px;
         }
     }
 
@@ -430,12 +487,51 @@
         #menu{
             display: flex;
             flex-direction: column;
-            justify-content: space-evenly;
-            height: auto;
+            justify-content: center;
+            height: 100vh;
         }
 
         .texto3{
             padding: 10px;
+            margin-top: 1px;
+            margin-bottom: 1px;
+        }
+        
+        .contenedor {
+            display: flex;
+            flex-direction: column;
+            width: 40vw;
+            height: 65vw;
+            border-radius: 4vh;
+            align-items: flex-start;
+            justify-content: space-around;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .imgmenu{
+            display: flex;
+        }
+
+        .imgmenu .textos{
+            font-size: 2vw;
+        }
+    }
+
+    /* --Media servicios-- */
+    @media screen and (max-width: 650px){
+
+        #services{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .texto3{
+            padding: 10px;
+            margin-top: 1px;
+            margin-bottom: 1px;
         }
         
         .contenedor {
