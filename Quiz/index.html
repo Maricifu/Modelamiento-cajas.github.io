@@ -11,16 +11,161 @@
     </head>
 
     <body>
-        <div class="container border">
-            <div class="row">
-
-                <!--Header y Menú-->
+        
+                <!--Header-->
                 <header id="header">
                     <img src="/Quiz/resources/LogoCinnamoroll1.jpg" alt="">
+
+                    <!--Menú de navegación-->
+                    <nav id="menus">
+                        <!--símbolo del menú-->
+                        <input type="checkbox" id="check">
+                        <label for="check" class="checkbtn">
+                            <i class="fas fa-bars"></i>
+                        </label>
+                        <!--listado del menú-->
+                        <ul>
+                            <li><a href="#home">HOME</a></li>
+                            <li><a href="#about">ABOUT US</a></li>
+                            <li><a href="#menu">MENU</a></li>
+                            <li><a href="#services">SERVICES</a></li>
+                            <li><a href="#contact">CONTACT US</a></li>
+                        </ul>
+                    </nav>
                 </header>
 
-            </div>
-        </div>
+
+                <!-- Menú de navegación celular -->
+                    <div id="menucel">
+                        <ul>
+                            <li><a href="#home">HOME</a></li>
+                            <li><a href="#about">ABOUT US</a></li>
+                            <li><a href="#menu">MENU</a></li>
+                            <li><a href="#services">SERVICES</a></li>
+                            <li><a href="#contact">CONTACT US</a></li>
+                        </ul>
+                    </div>
+
+                <!--Sección home-->
+                <section id="home">
+                    <div id="texto">
+                        <h1>Cinnamoroll Coffee - Shop</h1>
+                        <h3>Sabor y experiencia en un solo lugar</h3>
+                        <button class="btn primary" href="#menu">Today´s Menu</button>
+                    </div>
+                    <div id="imghome">
+                        <img src="/Quiz/resources/Rolls.png" alt="">
+                    </div>
+                    <div id="imgresp">
+                        <img src="/Quiz/resources/rollsresponsive.png" alt="">
+                    </div>
+                </section>
+
+                <!--Sección about us-->
+                <section id="about">
+                    <div class="imgabout">
+                        <img src="/Quiz/resources/cinnnamo.png" alt="">
+                    </div>
+                    <div class="texto2">
+                        <p class="t1">About Us</p>
+                        <P class="t2">Amantes del buen café y la pastelería</P>
+                        <p class="t3">La perfección de los rollos de canela y el café se juntan para hacerte vivir una experiencia única.</p>
+                        <div class="boton">
+                            <a href="#services">
+                                <button class="btn primary">Learn more</button>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <!--Sección menu-->
+                <section id="menu">
+                    <div class="texto3">
+                        <h1>Nuestro Menú</h1>
+                        <p>Diferentes opciones deliciosas para tu paladar</p>
+                    </div>
+                    <!-- Contenedor menú -->
+                    <div class="contenedor">
+                        <!-- rollos de canela -->
+                        <div class="imgmenu">
+                            <img src="/Quiz/resources/rollos.jpg" alt="rollos">
+                            <div class="textos">
+                                <p class="m1">Rollos de canela</p>
+                                <p class="m2">Cinnamoroll Café</p>
+                                <p class="m3">$8.000</p>
+                            </div>
+                        </div>
+
+                        <!-- Café -->
+                        <div class="imgmenu">
+                            <img src="/Quiz/resources/cafe.jpg" alt="cafe">
+                            <div class="textos">
+                                <p class="m1">Café</p>
+                                <p class="m2">Cinnamoroll Café</p>
+                                <p class="m3">$6.000</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Croissant -->
+                        <div class="imgmenu">
+                            <img src="/Quiz/resources/croissant.jpg" alt="croissant">
+                            <div class="textos">
+                                <p class="m1">Croissant</p>
+                                <p class="m2">Cinnamoroll Café</p>
+                                <p class="m3">$5.000</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!--Sección services-->
+                <section id="services">
+                    <div class="texto3">
+                        <h1>Servicios</h1>
+                        <p>La mejor comida y un buen servicio a un click</p>
+                    </div>
+                    <!-- Contenedor servicios-->
+                    <div class="contenedor">
+                        <!-- order -->
+                        <div class="imgmenu">
+                            <img src="/Quiz/resources/cafe2.png" alt="order">
+                            <div class="textos">
+                                <p class="m1">Order</p>
+                                <p class="m2">Ordena nuestros productos frescos</p>
+                                <button class="btn primary">Seleccionar</button>
+                            </div>
+                        </div>
+
+                        <!-- shipping -->
+                        <div class="imgmenu">
+                            <img src="/Quiz/resources/cafe1.png" alt="shipping">
+                            <div class="textos">
+                                <p class="m1">Shipping</p>
+                                <p class="m2">Alta calidad en todos nuestros productos</p>
+                                <button class="btn primary">Seleccionar</button>
+                            </div>
+                        </div>
+                        
+                        <!-- dellvered -->
+                        <div class="imgmenu">
+                            <img src="/Quiz/resources/cafe6.png" alt="dellvered">
+                            <div class="textos">
+                                <p class="m1">Dellvered</p>
+                                <p class="m2">Entrega hasta la puerta de tu casa.</p>
+                                <button class="btn primary">Seleccionar</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!--Sección contact-->
+                <section id="contact">
+                    
+                </section>
+                
+
+        <!--Scripts-->
+        
         
 
     </body>
